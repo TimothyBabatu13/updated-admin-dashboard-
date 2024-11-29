@@ -4,7 +4,8 @@ import { BusinessCard } from "../components/business-card"
 import { DashboardHeader } from "../components/dashboard-header"
 import { DashboardShell } from "../components/dashboard-shell"
 import { data, dataType } from "./data"
-import { useStatusProvider } from "./StatusProvider";
+import { useStatusProvider } from "@/context/StatusProvider";
+
 
 const Page = () => {
   const [Data, setData] = useState<Array<dataType>>(data);

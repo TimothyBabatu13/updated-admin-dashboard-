@@ -1,7 +1,8 @@
 'use client';
 import { Button } from "@/components/ui/button"
+import { useStatusProvider } from "@/context/StatusProvider";
 import { useState } from "react";
-import { useStatusProvider } from "../dashboard/StatusProvider";
+
 
 export type stringName = 'Approved' | 'Declined' | 'All' | 'Pending'
 export function DashboardHeader() {
